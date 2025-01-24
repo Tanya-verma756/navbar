@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+nav{
+    margin: 1vw 2vw;
+    border-radius: 5px;
+    box-shadow: 5px 5px 8px gray;
+    padding: 1vw 2vw;
+    
+}
+.main-nav{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    text-align: center;
+}
+#logo{
+    width: 9vw;
+    height: 5vh;
+    
+}
+
+#logo img {
+    width: 100%;
+}
+#searchbox{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 2px 5px;
+}
+#searchbox input{
+    border: none;
+}
+.navlinks{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 3rem;
+    list-style: none;
+    
+    height: 100%;
+   
+}
+
+.navdrop span {
+    font-size: small;
+}
+.megadrop{
+    padding: 2vw ;
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    gap: 5;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    background-color:white;
+    margin: 1rem;
+    
+}
+
+.Domain{
+   margin-left:  5rem ;
+   margin-right: 2rem;
+   text-align: left;
+}
+.Domain ul{
+    list-style: none;
+}
+.Domain li{
+    margin: 1rem;
+    width: 15vw;
+    font-size: medium;
+    display: flex;
+    justify-content: space-between;
+}
+.Domain li:hover{
+    cursor: pointer;
+}
+.viewbut{
+    width: 15vw;
+}
+.viewbut a{
+    width: 10vw;
+    color: red;
+    text-decoration: none;
+}
+#abroadstudy{
+    font-size: small;
+    padding-top: 3px;
+}
+#abroadstudy a{
+    text-decoration: none;
+    color: black;
+}
+#more{
+    display: flex;
+    justify-content: space-evenly;
+}
+#more div h4,p{
+    text-align: left;
+}
+#more div h4{
+    margin-top: 1rem;
+}
+#more a {
+    text-decoration: none;
+    color: black;
+}
+.navdrop.hover {
+    cursor: pointer;
+}
+
+
+.navdrop:hover .megadrop {
+    
+    opacity: 1;
+    visibility: visible;
+}
+
+.show .megadrop {
+    
+    opacity: 1;
+    visibility: visible;
+}
+
+.navbut{
+    display: flex;
+    justify-content: space-between;
+    gap: 1vw;
+    font-size: small;
+
+}
+.navbut a{
+    text-decoration: none;
+    
+}
+#freecourse{
+    border: 1px solid rgb(74, 74, 74);
+    border-radius: 5px;
+    padding:5px;
+    color: black;
+}
+#freecourse a{
+    text-decoration: none;
+   
+    font-weight:50
+}
+#signup{
+    border: 1px solid rgb(74, 74, 74);
+    border-radius: 5px;
+    padding:5px;
+    color: white;
+    background-color: red;
+}
+#signup a{
+    text-decoration: none;
+    color:white;
+    font-weight:500;
+}
+
+
+
+
+
+
+/* partial_nav */
+#partial_nav{
+    margin: 0 10vw;
+   
+}
+#par_ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+
+}
+.parnavimg {
+    display: flex;
+    justify-content: center;
+   
+}
+
+li span:hover {
+    cursor: pointer;
+}
+
+.parnavlinks:hover .parnav_content{
+    visibility: visible;
+    opacity: 1;
+   
+}
+.parnav_content{
+    display: flex;
+    width: 70%;
+    position: absolute;
+    left: 10%;
+    background-color:white;
+    margin:0 6vw;
+    justify-content: space-evenly;
+    visibility: hidden;
+    opacity: 0;
+    font-size: small;
+    padding-top: 1rem;
+}
+.parnav_content div ul li {
+    
+    width: 10vw;
+    margin: 1vw 2vw;
+   
+}
+.parnavincont{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem;
+    
+}
+.parnavincont a{
+    display: flex;
+    width: 25vw;
+    margin:0 2rem;
+    margin-bottom: 1rem;
+    
+}
+
+.parnavcontimg {
+    width: 2vw;
+    height: 4vh;
+    margin:0 1rem;
+   
+}
+.parnavcontimg img {
+    border-radius: 4px;
+    width: 100%;
+}
+.parnavconbut{
+    text-align: center;
+}
